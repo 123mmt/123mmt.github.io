@@ -1,0 +1,131 @@
+html
+{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 237, 243);
+}
+
+.container
+{
+    width: 100%;
+    text-align: center;
+}
+
+.loginBox
+{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.loginDiv
+{
+    padding-top: 10%;
+    border-radius: 3px;
+    padding-bottom: 10%;
+    background-color: #ffffff;
+}
+
+.errorMessageInput
+{
+    opacity: .9;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px;
+    /* background-color: #F2DEDE; */
+    background-color: #fe5461;
+}
+
+.successMessageInput
+{
+    opacity: .9;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px;
+    background-color: #0acb8e;
+}
+
+input
+{
+    width: 70%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14pt;
+    line-height: 28pt;
+    margin-bottom: 28pt;
+    /* background-color: #f8f4e5; */
+    border-bottom: 5px solid black;
+}
+
+.forgotLabel:hover
+{
+    cursor: pointer;
+    color: #8243d7;
+}
+
+.btn
+{
+    display: inline-block;
+    font-weight: 400;
+    color: #8a909d;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+            user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.56rem 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce)
+{
+    .btn {
+        transition: none;
+    }
+}
+.btn:hover
+{
+    cursor: pointer;
+    color: #8a909d;
+    text-decoration: none;
+}
+.btn:focus, .btn.focus
+{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary
+{
+    color: #ffffff;
+    background-color: #9e6de0;
+    border-color: #9e6de0;
+}
+.btn-primary:hover
+{
+    color: #ffffff;
+    background-color: #894dd9;
+    border-color: #8243d7;
+}
+.btn-primary:focus
+{
+    color: #ffffff;
+    background-color: #894dd9;
+    border-color: #8243d7;
+    box-shadow: 0 0 0 0.2rem rgba(173, 131, 229, 0.5);
+}
