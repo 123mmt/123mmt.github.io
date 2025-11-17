@@ -45,6 +45,7 @@
             {
                 method: this.method,
                 headers: {
+                    "Access-Control-Allow-Origin": "*",
                     "ngrok-skip-browser-warning": "True"
                 },
                 body: JSON.stringify(data)
