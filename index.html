@@ -33,5 +33,25 @@
         {
             window.location.href = "https://fresh-vital-serval.ngrok-free.app/resetPassword";
         }
+
+        // Handle form submission and skip ngrok warning
+        document.getElementById("loginForm").addEventListener("submit", function(event)
+        {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch(this.action,
+            {
+                method: this.method,
+                headers: {
+                    "ngrok-skip-browser-warning": "True"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => console.log("Success:", result))
+            .catch(error => console.error("Error:", error));
+        });
     </script>
 </html>
