@@ -41,10 +41,6 @@
             const formData = new FormData(this);
             const data = Object.fromEntries(formData.entries());
 
-            console.log(this.action);
-            console.log(this.method);
-            console.log(this.headers);
-
             fetch(this.action,
             {
                 method: this.method,
