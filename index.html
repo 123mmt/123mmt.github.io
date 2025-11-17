@@ -45,14 +45,11 @@
             {
                 method: this.method,
                 headers: {
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/x-www-form-urlencoded",
                     "ngrok-skip-browser-warning": "True"
                 },
                 body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => console.log("Success:", result))
-            .catch(error => console.error("Error:", error));
+            });
         });
     </script>
 </html>
